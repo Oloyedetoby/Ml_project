@@ -12,3 +12,37 @@ Sklearn for model building
 Jupyter notebook, visual studio code and pycharm as IDE
 Python flask for http server
 HTML/CSS/Javascript for UI
+BACKGROUND STUDY
+ Banglore house prediction is a predicting model that predict the price of house given some factores which generally have an influence on the price which include
+    a. Area type
+    b. Area size of the apartment
+    c. The numbers of bedrooms and toilets
+    d. Location
+    e. Society
+  Given this factors the model which predict the price of the house
+
+DATA SOURCE
+   All the data I used was gotten from kaggle
+ https://www.kaggle.com/code/kavyaganji/bangalore-house-price-prediction/data?select=Bengaluru_House_Data.csv
+ 
+TRANSFORMATION PROCESS
+   1. The first thing I did was to drop all the empty columns and row cause it may result to bad learning to our model
+   2. In the total square column, the data was given in range, so I have to split it into two tokens and and then getting the mean
+   3. I grouped the locations that did not occur more than 10 into others
+   4.  There are some records that are not realistic example, like having more that 6 bedrooms and the price is desame with one of two bedrooms giving all other parameters are desame.. I filtered out this type of records
+   5. The computer only understand numbers so I converted each columns into one hot encoding, though I used the function dummies variable
+
+ MODEL BUILDING
+I used 3 models which are :
+  Linear Regression which gives me 81% accuracy
+   Lasso which gives me 68% accuracy
+ And finally decision tree which gave me 71%
+
+DEPLOYMENT APPROACH
+I build a website which I diployed locally my computer 
+I used HTML CSS and flask as the back end
+https://github.com/Oloyedetoby/Ml_project/tree/main/BangloreHomePrediction/client
+
+
+ KEY TAKEAWAY
+With this model the price of real estate properties can be easily be predicted which in turn can let the consumer to have a glinch oh the price may be
