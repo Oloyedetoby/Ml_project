@@ -1,2 +1,3 @@
 # Ml_project
-my machine learning project that was deploy on a server
+This is my list of Machine Learning Projects.
+In folder contains the model and there is readme file to get what each project actually do
